@@ -1,0 +1,23 @@
+subprojects {
+    apply plugin: 'eclipse'
+    apply plugin: 'java'
+
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+
+    compileJava.options.encoding = 'UTF-8'
+
+    repositories {
+        mavenCentral()
+    }
+
+    task stage(dependsOn: ['clean', ':server:installDist', ':webapp:war'])
+}
+
+ext {
+    payaraDependency = 'fish.payara.extras:payara-micro:4.1.153'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.7'
+}

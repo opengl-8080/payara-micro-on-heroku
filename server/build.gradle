@@ -10,3 +10,5 @@ dependencies {
 eclipse {
     project.name = 'payara-micro-on-heroku-server'
 }
+
+installDist.mustRunAfter clean

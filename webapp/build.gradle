@@ -6,9 +6,7 @@ dependencies {
     providedCompile payaraDependency
 }
 
-eclipse {
-    project.name = 'payara-micro-on-heroku-webapp'
-}
+eclipse.project.name = 'payara-micro-on-heroku-webapp'
 
 war.mustRunAfter clean
 

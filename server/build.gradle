@@ -7,8 +7,6 @@ dependencies {
     compile payaraDependency
 }
 
-eclipse {
-    project.name = 'payara-micro-on-heroku-server'
-}
+eclipse.project.name = 'payara-micro-on-heroku-server'
 
 installDist.mustRunAfter clean

@@ -1,0 +1,12 @@
+apply plugin: 'application'
+
+mainClassName = 'sample.heroku.Main'
+applicationName = 'server'
+
+dependencies {
+    compile payaraDependency
+}
+
+eclipse {
+    project.name = 'payara-micro-on-heroku-server'
+}

@@ -1,0 +1,11 @@
+apply plugin: 'war'
+
+war.baseName = 'webapp'
+
+dependencies {
+    providedCompile payaraDependency
+}
+
+eclipse {
+    project.name = 'payara-micro-on-heroku-webapp'
+}

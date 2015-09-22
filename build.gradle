@@ -11,7 +11,7 @@ subprojects {
         mavenCentral()
     }
 
-    task stage(dependsOn: ['clean', 'installDist', 'war'])
+    task stage(dependsOn: ['clean', ':server:installDist', ':webapp:war'])
 }
 
 ext {
